@@ -1,345 +1,345 @@
-    * {
-        padding: 0;
-        margin: 0;
-        line-height: 1;
+* {
+    padding: 0;
+    margin: 0;
+    line-height: 1;
+}
+
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon.eot?bfdb4f');
+    src: url('../fonts/icomoon.eot?bfdb4f#iefix') format('../embedded-opentype'), url('../fonts/icomoon.ttf?bfdb4f') format('truetype'), url('fonts/icomoon.woff?bfdb4f') format('woff'), url('fonts/icomoon.svg?bfdb4f#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+body {
+    background-color: #f1fafa;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.shortcut {
+    position: relative;
+    height: 25px;
+}
+
+.shortcut ul {
+    float: left;
+    position: absolute;
+    right: 0;
+}
+
+.shortcut ul li {
+    float: left;
+    line-height: 25px;
+    padding: 0 10px;
+    font-size: 14px;
+}
+
+.shortcut ul li a {
+    color: #333;
+}
+
+.phone::before {
+    font-family: 'icomoon';
+    content: "\e901";
+    color: #f00;
+}
+
+.wechat::before {
+    font-family: 'icomoon';
+    content: "\e900";
+    color: #7bb32e;
+}
+
+header {
+    position: relative;
+    height: 100px;
+}
+
+#times {
+    position: absolute;
+    left: -300px;
+    width: 300px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.logo {
+    float: left;
+}
+
+.logo img {
+    width: 150px;
+    height: 80px;
+}
+
+header ul {
+    float: left;
+    margin-left: 70px;
+}
+
+header ul li {
+    float: left;
+    height: 80px;
+    line-height: 100px;
+    font-size: 18px;
+    padding: 0 20px;
+}
+
+header ul li a {
+    color: #050505;
+}
+
+header ul li:hover {
+    border-bottom: 2px solid #df8c11;
+}
+
+header ul li:hover>a {
+    color: #df8c11;
+}
+
+.search {
+    float: right;
+    margin-top: 30px;
+    margin-right: 20px;
+    width: 420px;
+    height: 40px;
+}
+
+.search input {
+    float: left;
+    width: 380px;
+    height: 40px;
+    outline: none;
+    border: 1px solid #df8c11;
+    border-right: 0;
+}
+
+.search button {
+    float: left;
+    width: 40px;
+    height: 40px;
+    border: 0;
+    background-color: #df8c11;
+    color: #333;
+}
+
+.banner {
+    position: relative;
+    height: 600px;
+}
+
+.banner ul {
+    position: absolute;
+    top: 0;
+    left: -150px;
+    width: 150px;
+    height: 600px;
+    background-color: rgba(0, 0, 0, .2);
+}
+
+.banner ul li {
+    position: relative;
+    line-height: 120px;
+    text-indent: 20px;
+    font-size: 20px;
+}
+
+.banner ul li a {
+    color: #fff;
+}
+
+.banner ul li::after {
+    position: absolute;
+    right: 10px;
+    content: '>';
+    color: #fff;
+}
+
+.banner ul li:hover>a,
+.banner ul li:hover::after {
+    color: #df8c11;
+}
+
+.banner ul li:hover {
+    background-color: rgba(0, 0, 0, .3);
+}
+
+.banner img {
+    height: 600px;
+    width: 1200px;
+}
+
+.songrecomand {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    height: 60px;
+    background-color: white;
+}
+
+.songrecomand li {
+    float: left;
+    line-height: 60px;
+    font-size: 18px;
+    padding: 0 30px;
+}
+
+.songrecomand li:first-child {
+    color: #df8c11;
+}
+
+.songrecomand li a {
+    color: #050505;
+}
+
+.albumrecomand {
+    height: 40px;
+    line-height: 40px;
+}
+
+.albumrecomand p:first-child {
+    float: left;
+    font-size: 20px;
+    color: #494949;
+}
+
+.albumrecomand p:last-child {
+    float: right;
+    font-size: 12px;
+}
+
+.album {
+    height: 250px;
+}
+
+.album div {
+    float: left;
+    margin-right: 24px;
+    height: 250px;
+    width: 220px;
+    background-color: #fff;
+}
+
+.album div:last-child {
+    margin-right: 0;
+}
+
+.album div img {
+    width: 220px;
+    height: 210px;
+}
+
+.album div p {
+    text-align: center;
+    line-height: 40px;
+    color: skyblue;
+}
+
+.mvrecomand {
+    height: 40px;
+    line-height: 40px;
+    color: #333;
+    font-size: 18px;
+}
+
+footer {
+    margin-top: 30px;
+    height: 400px;
+    background-color: white;
+}
+
+.button {
+    position: relative;
+    height: 160px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.button a {
+    position: absolute;
+    animation: sun 8s infinite;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    height: 60px;
+    line-height: 60px;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    color: #fff;
+    background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+    background-size: 400%;
+    border-radius: 30px;
+    z-index: 1;
+}
+
+.button a::before {
+    content: "";
+    position: absolute;
+    left: -5px;
+    right: -5px;
+    top: -5px;
+    bottom: -5px;
+    background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+    background-size: 400%;
+    border-radius: 30px;
+    filter: blur(20px);
+    z-index: -1;
+    animation: sun 8s infinite;
+}
+
+@keyframes sun {
+    100% {
+        background-position: -400% 0;
     }
-    
-    @font-face {
-        font-family: 'icomoon';
-        src: url('../fonts/icomoon.eot?bfdb4f');
-        src: url('../fonts/icomoon.eot?bfdb4f#iefix') format('../embedded-opentype'), url('../fonts/icomoon.ttf?bfdb4f') format('truetype'), url('fonts/icomoon.woff?bfdb4f') format('woff'), url('fonts/icomoon.svg?bfdb4f#icomoon') format('svg');
-        font-weight: normal;
-        font-style: normal;
-        font-display: block;
-    }
-    
-    body {
-        background-color: #f1fafa;
-    }
-    
-    a {
-        text-decoration: none;
-    }
-    
-    li {
-        list-style: none;
-    }
-    
-    .w {
-        width: 1200px;
-        margin: 0 auto;
-    }
-    
-    .shortcut {
-        position: relative;
-        height: 25px;
-    }
-    
-    .shortcut ul {
-        float: left;
-        position: absolute;
-        right: 0;
-    }
-    
-    .shortcut ul li {
-        float: left;
-        line-height: 25px;
-        padding: 0 10px;
-        font-size: 14px;
-    }
-    
-    .shortcut ul li a {
-        color: #333;
-    }
-    
-    .phone::before {
-        font-family: 'icomoon';
-        content: "\e901";
-        color: #f00;
-    }
-    
-    .wechat::before {
-        font-family: 'icomoon';
-        content: "\e900";
-        color: #7bb32e;
-    }
-    
-    header {
-        position: relative;
-        height: 100px;
-    }
-    
-    #times {
-        position: absolute;
-        left: -200px;
-        width: 200px;
-        height: 100px;
-        line-height: 100px;
-        text-align: center;
-        font-size: 18px;
-    }
-    
-    .logo {
-        float: left;
-    }
-    
-    .logo img {
-        width: 150px;
-        height: 80px;
-    }
-    
-    header ul {
-        float: left;
-        margin-left: 70px;
-    }
-    
-    header ul li {
-        float: left;
-        height: 80px;
-        line-height: 100px;
-        font-size: 18px;
-        padding: 0 20px;
-    }
-    
-    header ul li a {
-        color: #050505;
-    }
-    
-    header ul li:hover {
-        border-bottom: 2px solid #df8c11;
-    }
-    
-    header ul li:hover>a {
-        color: #df8c11;
-    }
-    
-    .search {
-        float: right;
-        margin-top: 30px;
-        margin-right: 20px;
-        width: 420px;
-        height: 40px;
-    }
-    
-    .search input {
-        float: left;
-        width: 380px;
-        height: 40px;
-        outline: none;
-        border: 1px solid #df8c11;
-        border-right: 0;
-    }
-    
-    .search button {
-        float: left;
-        width: 40px;
-        height: 40px;
-        border: 0;
-        background-color: #df8c11;
-        color: #333;
-    }
-    
-    .banner {
-        position: relative;
-        height: 600px;
-    }
-    
-    .banner ul {
-        position: absolute;
-        top: 0;
-        left: -150px;
-        width: 150px;
-        height: 600px;
-        background-color: rgba(0, 0, 0, .2);
-    }
-    
-    .banner ul li {
-        position: relative;
-        line-height: 120px;
-        text-indent: 20px;
-        font-size: 20px;
-    }
-    
-    .banner ul li a {
-        color: #fff;
-    }
-    
-    .banner ul li::after {
-        position: absolute;
-        right: 10px;
-        content: '>';
-        color: #fff;
-    }
-    
-    .banner ul li:hover>a,
-    .banner ul li:hover::after {
-        color: #df8c11;
-    }
-    
-    .banner ul li:hover {
-        background-color: rgba(0, 0, 0, .3);
-    }
-    
-    .banner img {
-        height: 600px;
-        width: 1200px;
-    }
-    
-    .songrecomand {
-        margin-top: 10px;
-        margin-bottom: 30px;
-        height: 60px;
-        background-color: white;
-    }
-    
-    .songrecomand li {
-        float: left;
-        line-height: 60px;
-        font-size: 18px;
-        padding: 0 30px;
-    }
-    
-    .songrecomand li:first-child {
-        color: #df8c11;
-    }
-    
-    .songrecomand li a {
-        color: #050505;
-    }
-    
-    .albumrecomand {
-        height: 40px;
-        line-height: 40px;
-    }
-    
-    .albumrecomand p:first-child {
-        float: left;
-        font-size: 20px;
-        color: #494949;
-    }
-    
-    .albumrecomand p:last-child {
-        float: right;
-        font-size: 12px;
-    }
-    
-    .album {
-        height: 250px;
-    }
-    
-    .album div {
-        float: left;
-        margin-right: 24px;
-        height: 250px;
-        width: 220px;
-        background-color: #fff;
-    }
-    
-    .album div:last-child {
-        margin-right: 0;
-    }
-    
-    .album div img {
-        width: 220px;
-        height: 210px;
-    }
-    
-    .album div p {
-        text-align: center;
-        line-height: 40px;
-        color: skyblue;
-    }
-    
-    .mvrecomand {
-        height: 40px;
-        line-height: 40px;
-        color: #333;
-        font-size: 18px;
-    }
-    
-    footer {
-        margin-top: 30px;
-        height: 400px;
-        background-color: white;
-    }
-    
-    .button {
-        position: relative;
-        height: 160px;
-        background-color: #fff;
-        text-align: center;
-    }
-    
-    .button a {
-        position: absolute;
-        animation: sun 8s infinite;
-        top: 50%;
-        left: 50%;
-        width: 200px;
-        height: 60px;
-        line-height: 60px;
-        transform: translate(-50%, -50%);
-        font-size: 24px;
-        color: #fff;
-        background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
-        background-size: 400%;
-        border-radius: 30px;
-        z-index: 1;
-    }
-    
-    .button a::before {
-        content: "";
-        position: absolute;
-        left: -5px;
-        right: -5px;
-        top: -5px;
-        bottom: -5px;
-        background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
-        background-size: 400%;
-        border-radius: 30px;
-        filter: blur(20px);
-        z-index: -1;
-        animation: sun 8s infinite;
-    }
-    
-    @keyframes sun {
-        100% {
-            background-position: -400% 0;
-        }
-    }
-    
-    .mod_help {
-        height: 150px;
-    }
-    
-    .mod_help dl {
-        float: left;
-        padding-top: 20px;
-        margin-right: 200px;
-    }
-    
-    .mod_help dt {
-        font-size: 18px;
-        color: #333333;
-        line-height: 1.6em;
-    }
-    
-    .mod_help dd a {
-        color: #333333;
-    }
-    
-    .mod_help dd {
-        font-size: 12px;
-        line-height: 1.6em;
-    }
-    
-    .mod_help dl:first-child {
-        margin-left: 300px;
-    }
-    
-    .copyright {
-        height: 50px;
-        line-height: 50px;
-        text-align: center;
-        color: #999;
-    }
+}
+
+.mod_help {
+    height: 150px;
+}
+
+.mod_help dl {
+    float: left;
+    padding-top: 20px;
+    margin-right: 200px;
+}
+
+.mod_help dt {
+    font-size: 18px;
+    color: #333333;
+    line-height: 1.6em;
+}
+
+.mod_help dd a {
+    color: #333333;
+}
+
+.mod_help dd {
+    font-size: 12px;
+    line-height: 1.6em;
+}
+
+.mod_help dl:first-child {
+    margin-left: 300px;
+}
+
+.copyright {
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: #999;
+}
