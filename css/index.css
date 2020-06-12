@@ -32,7 +32,21 @@ li {
 
 .shortcut {
     position: relative;
-    height: 25px;
+    height: 30px;
+    background-color: transparent;
+    outline: none;
+}
+
+.denglu {
+    float: left;
+    margin-left: 550px;
+    line-height: 30px;
+}
+
+#name,
+#pwd {
+    height: 18px;
+    width: 150px;
 }
 
 .shortcut ul {
@@ -43,7 +57,7 @@ li {
 
 .shortcut ul li {
     float: left;
-    line-height: 25px;
+    line-height: 30px;
     padding: 0 10px;
     font-size: 14px;
 }
