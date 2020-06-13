@@ -47,6 +47,9 @@ li {
 #pwd {
     height: 18px;
     width: 150px;
+    border-radius: 9px;
+    text-indent: 9px;
+    outline: none;
 }
 
 .shortcut ul {
